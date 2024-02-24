@@ -1,4 +1,4 @@
-![image](https://github.com/unioreox/ChannelU-Public/assets/17230016/dad55d4a-e0f5-4d7e-97e8-d2a9118829fe)# ChannelU-Public
+# ChannelU-Public
 Optimize your experience while managing Telegram channels  
 env BOT_TOKEN - Bot Token form BotFather  
 env CHANNELS - Channel IDs to enable the Bot  
