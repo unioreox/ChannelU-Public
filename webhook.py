@@ -8,6 +8,7 @@ BotToken = os.environ.get('BOT_TOKEN')
 channels = os.environ.get('CHANNELS').split(",")
 AIKey = os.environ.get('AI_KEY')
 WEBHOOK_URL = os.environ.get('WEBHOOK_URL')
+WEBHOOK_KEY = os.environ.get('WEBHOOK_KEY')
 application = ApplicationBuilder().token(BotToken).build()
 
 
@@ -62,7 +63,7 @@ application.add_handler(MessageHandler(filters.ChatType.CHANNEL and ~filters.FOR
 application.run_webhook(
     listen="0.0.0.0",
     port=PORT,
-    secret_token="UNi-VwJFbHDL1mDzhFtt",
+    secret_token=WEBHOOK_KEY,
     webhook_url=WEBHOOK_URL
 )
 
